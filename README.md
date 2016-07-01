@@ -6,6 +6,7 @@ user with an Ubuntu terminal, with a "pi" user (due to the fact that this evolve
 on a Raspberry Pi), and a full installation of EPICS -- including ASyn Driver and StreamDevice.
 
 This container can be used (from a machine with docker already installed) with the following command:
-	docker run -i -t sdmolloy/ubuntu-playground:latest /bin/bash
+
+docker run -i -t sdmolloy/ubuntu-playground:latest /bin/bash
 
 Further instructions/guidance will appear on http://www.smolloy.com/blog in due course.
