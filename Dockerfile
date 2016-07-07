@@ -45,3 +45,5 @@ RUN mkdir /epics/modules/stream && \
 	cd StreamDevice-2-6 && \
 	make
 
+COPY ./aliasContents.txt /root/.bash_aliases
+
