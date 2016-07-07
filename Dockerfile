@@ -26,5 +26,7 @@ RUN mkdir epics && \
 	export EPICS_BASE_BIN=${EPICS_BASE}/bin/${EPICS_HOST_ARCH} && \
 	export EPICS_BASE_LIB=${EPICS_BASE}/lib/${EPICS_HOST_ARCH} && \
 	export LD_LIBRARY_PATH=${EPICS_BASE_LIB}:${LD_LIBRARY_PATH} && \
-	export PATH=${PATH}:${EPICS_BASE_BIN}
+	export PATH=${PATH}:${EPICS_BASE_BIN} && \
+	cd base && \
+	make
 
