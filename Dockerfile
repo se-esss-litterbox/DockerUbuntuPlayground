@@ -30,3 +30,14 @@ RUN mkdir epics && \
 	cd base && \
 	make
 
+RUN mkdir /epics/modules && \
+	tar -zxf /tmp_epics/asyn4-28.tar.gz -C /epics/modules/ && \
+	ln -s /epics/modules/asyn4-28 /epics/modules/asyn && \
+	cd /epics/modules/asyn && \
+	cat configure/RELEASE && \
+	sed -i 's/^IPAC/#IPAC/' configure/RELEASE && \
+	sed -i 's/^SNCSEQ/#SNCSEQ/' configure/RELEASE && \
+	sed -i 's/^EPICS_BASE.*/EPICS_BASE=\/usr\/local\/epics\/base/' configure/RELEASE && \
+	cat configure/RELEASE && \
+	make
+
