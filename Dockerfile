@@ -15,6 +15,3 @@ RUN export USER="pi" && \
 	cd EPICSpi-master && \
 	./installEPICS.sh
 
-EXPOSE 5064
-EXPOSE 5065
-
