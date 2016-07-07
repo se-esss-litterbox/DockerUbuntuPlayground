@@ -47,3 +47,6 @@ RUN mkdir /epics/modules/stream && \
 
 COPY ./aliasContents.txt /root/.bash_aliases
 
+USER root
+WORKDIR /root
+
