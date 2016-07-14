@@ -50,3 +50,5 @@ COPY ./aliasContents.txt /root/.bash_aliases
 USER root
 WORKDIR /root
 
+EXPOSE 5064 5065
+
